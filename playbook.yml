@@ -1,6 +1,6 @@
 ---
 - name: Check system time on Raspberry Pi
-  hosts: 192.168.98.189
+  hosts: 100.117.44.69
   gather_facts: no
 
   tasks:
