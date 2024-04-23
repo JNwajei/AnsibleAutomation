@@ -1,0 +1,12 @@
+---
+- name: Ping server in the domain
+  hosts: all
+  tasks:
+    - name: Ping server
+      ping:
+      register: ping_result
+
+    - name: Print success message
+      debug:
+        msg: "Ping successful!"
+      when: ping_result.ping != null and ping_result.ping != 'FAILED'
