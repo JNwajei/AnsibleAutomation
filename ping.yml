@@ -1,5 +1,5 @@
 ---
-- name: Ping server in the domain
+- name: Ping DAD
   hosts: all
   tasks:
     - name: Ping server
